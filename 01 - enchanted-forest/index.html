@@ -7,19 +7,69 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--
-        # make a div to contain all of the forest nodes - give it a class
-        # make a div for each of the forest creatures
+    <!--# make a div to contain all of the forest nodes - give it a class-->
+    <div class="forest">
+        <!--# make a div for each of the forest creatures
             # give each of the divs a data-key attribute to tie w sounds
-            # assign the same class for all, but diff than main div for CSS styling purposes
-            # use the <kbd> tag for the lettering
-            # create a span inside the little divs with a new class.
+            # assign the same class for all, but diff than main div for CSS styling purposes-->
+        <div data-key="werewolf" class="tree">
+            <!-- # use the <kbd> tag for the lettering -->
+            <kbd>"a"</kbd>
+            <!-- # create a span inside the little divs with a new class.
                 # between the tags, desc the sound
-                # assign each span the same class, diff from the div classes
+                # assign each span the same class, diff from the div classes-->
+            <span class="animalSound">arctic drought</span>
+        </div>
+        <div data-key="fox" class="tree">
+            <kbd>"s"</kbd>
+            <span class="animalSound">daydreams</span>
+        </div>
+        <div data-key="bigfoot" class="tree">
+            <kbd>"d"</kbd>
+            <span class="animalSound">frozen fortress</span>
+        </div>
+        <div data-key="frog" class="tree">
+            <kbd>"f"</kbd>
+            <span class="animalSound">liquid pad</span>
+        </div>
+        <div data-key="bear" class="tree">
+            <kbd>"g"</kbd>
+            <span class="animalSound">minor oddity</span>
+        </div>
+        <div data-key="deer" class="tree">
+            <kbd>"h"</kbd>
+            <span class="animalSound">secret garden</span>
+        </div>
+        <div data-key="nymph" class="tree">
+            <kbd>"j"</kbd>
+            <span class="animalSound">shimmering sine</span>
+        </div>
+        <div data-key="mermaid" class="tree">
+            <kbd>"k"</kbd>
+            <span class="animalSound">swimming</span>
+        </div>
+        <div data-key="bird" class="tree">
+            <kbd>"l"</kbd>
+            <span class="animalSound">whimsy</span>
+        </div>
+
+    </div>
+
+        <!--
         # below the div tag, use the <audio> tag to implement the sounds
             # assign data-key to corresponding div
             # src attribute should be "fileLocation.wav"
     -->
+<audio data-key="werewolf" src="sounds/Arctic Drought.wav"></audio>
+<audio data-key="fox" src="sounds/Day Dreams.wav"></audio>
+<audio data-key="bigfoot" src="sounds/Frozen Fortress.wav"></audio>
+<audio data-key="frog" src="sounds/Liquid Pad.wav"></audio>
+<audio data-key="bear" src="sounds/Minor Oddity.wav"></audio>
+<audio data-key="deer" src="sounds/Secret Garden.wav"></audio>
+<audio data-key="nymph" src="sounds/Shimmering Sine.wav"></audio>
+<audio data-key="mermaid" src="sounds/Swimming.wav"></audio>
+<audio data-key="bird" src="sounds/Whimsy.wav"></audio>
+
     <script src = "app.js"></script>
 </body>
 </html>

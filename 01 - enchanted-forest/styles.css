@@ -1,7 +1,14 @@
 /*
-    # html selector
+    # html selector */
+html {
+    background: url(photos/resized.sebastian.jpg);
+    background-size: cover;
+}
+    /*
         # set background to photo with url(link.com) bottom center
-        # set backgroun-size to cover
+        # Photo by Sebastian Unrau on Unsplash
+        # Photo by veeterzy on Unsplash
+        # set background-size to cover
     
     # body, html
         # margin, padding, font family
