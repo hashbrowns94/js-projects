@@ -12,45 +12,45 @@
         <!--# make a div for each of the forest creatures
             # give each of the divs a data-key attribute to tie w sounds
             # assign the same class for all, but diff than main div for CSS styling purposes-->
-        <div data-key="werewolf" class="tree">
+        <div data-key="65" class="tree" id="werewolf">
             <!-- # use the <kbd> tag for the lettering -->
-            <kbd>"a"</kbd>
+            <kbd>a</kbd>
             <!-- # create a span inside the little divs with a new class.
                 # between the tags, desc the sound
                 # assign each span the same class, diff from the div classes-->
-            <span class="animalSound">arctic drought</span>
+            <span class="animalSound" id="arcticDrought">werewolf</span>
         </div>
-        <div data-key="fox" class="tree">
-            <kbd>"s"</kbd>
-            <span class="animalSound">daydreams</span>
+        <div data-key="83" class="tree" id="fox">
+            <kbd>s</kbd>
+            <span class="animalSound" id="dayDreams">fox</span>
         </div>
-        <div data-key="bigfoot" class="tree">
-            <kbd>"d"</kbd>
-            <span class="animalSound">frozen fortress</span>
+        <div data-key="68" class="tree" id="bigfoot">
+            <kbd>d</kbd>
+            <span class="animalSound" id="frozenFortress">bigfoot</span>
         </div>
-        <div data-key="frog" class="tree">
-            <kbd>"f"</kbd>
-            <span class="animalSound">liquid pad</span>
+        <div data-key="70" class="tree" id="frog">
+            <kbd>f</kbd>
+            <span class="animalSound" id="liquidPad">frog</span>
         </div>
-        <div data-key="bear" class="tree">
-            <kbd>"g"</kbd>
-            <span class="animalSound">minor oddity</span>
+        <div data-key="71" class="tree" id="bear">
+            <kbd>g</kbd>
+            <span class="animalSound" id="minorOddity">bear</span>
         </div>
-        <div data-key="deer" class="tree">
-            <kbd>"h"</kbd>
-            <span class="animalSound">secret garden</span>
+        <div data-key="72" class="tree" id="deer">
+            <kbd>h</kbd>
+            <span class="animalSound" id="secretGarden">deer</span>
         </div>
-        <div data-key="nymph" class="tree">
-            <kbd>"j"</kbd>
-            <span class="animalSound">shimmering sine</span>
+        <div data-key="74" class="tree" id="nymph">
+            <kbd>j</kbd>
+            <span class="animalSound" id="shimmeringSine">nymph</span>
         </div>
-        <div data-key="mermaid" class="tree">
-            <kbd>"k"</kbd>
-            <span class="animalSound">swimming</span>
+        <div data-key="75" class="tree" id="mermaid">
+            <kbd>k</kbd>
+            <span class="animalSound" id="swimming">mermaid</span>
         </div>
-        <div data-key="bird" class="tree">
-            <kbd>"l"</kbd>
-            <span class="animalSound">whimsy</span>
+        <div data-key="76" class="tree" data-key="bird">
+            <kbd>l</kbd>
+            <span class="animalSound" id="whimsy">bird</span>
         </div>
 
     </div>
@@ -60,16 +60,30 @@
             # assign data-key to corresponding div
             # src attribute should be "fileLocation.wav"
     -->
-<audio data-key="werewolf" src="sounds/Arctic Drought.wav"></audio>
-<audio data-key="fox" src="sounds/Day Dreams.wav"></audio>
-<audio data-key="bigfoot" src="sounds/Frozen Fortress.wav"></audio>
-<audio data-key="frog" src="sounds/Liquid Pad.wav"></audio>
-<audio data-key="bear" src="sounds/Minor Oddity.wav"></audio>
-<audio data-key="deer" src="sounds/Secret Garden.wav"></audio>
-<audio data-key="nymph" src="sounds/Shimmering Sine.wav"></audio>
-<audio data-key="mermaid" src="sounds/Swimming.wav"></audio>
-<audio data-key="bird" src="sounds/Whimsy.wav"></audio>
+<audio data-key="65" id="audioWerewolf" src="sounds/Arctic Drought.wav"></audio>
+<audio data-key="83" id="audioFox" src="sounds/Day Dreams.wav"></audio>
+<audio data-key="68" id="audioBigfoot" src="sounds/Frozen Fortress.wav"></audio>
+<audio data-key="70" id="audioFrog" src="sounds/Liquid Pad.wav"></audio>
+<audio data-key="71" id="audioBear" src="sounds/Minor Oddity.wav"></audio>
+<audio data-key="72" id="audioDeer" src="sounds/Secret Garden.wav"></audio>
+<audio data-key="74" id="audioNymph" src="sounds/Shimmering Sine.wav"></audio>
+<audio data-key="75" id="audioMermaid" src="sounds/Swimming.wav"></audio>
+<audio data-key="76" id="audioBird" src="sounds/Whimsy.wav"></audio>
 
-    <script src = "app.js"></script>
+<img data-key="65" id="photoWerewolf" src="animals/werewolf/mad guy cutout.png"></audio>
+<img data-key="83" id="photoFox" src="animals/fox/fox tilt cutout.png"></audio>
+<img data-key="68" id="photoBigfoot" src="animals/bigfoot/bigfoot sighting cutout.png"></audio>
+<img data-key="70" id="photoFrog" src="animals/frog/frog chillin but w a lily cutout.png"></audio>
+<img data-key="71" id="photoBear" src="animals/bear/silly bear cutout.png"></audio>
+<img data-key="72" id="photoDeer" src="animals/deer/deer jumping cutout.png"></audio>
+<img data-key="74" id="photoNymph" src="animals/nymph/forest nymph cutout.png"></audio>
+<img data-key="75" id="photoMermaid" src="animals/mermaid/mermaid red cutout.png"></audio>
+<img data-key="76" id="photoBird" src="animals/bird/bluebird cutout.png"></audio>
+
+<footer>
+    <h6>Photo by Sebastian Unrau on Unsplash</h6>
+</footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
