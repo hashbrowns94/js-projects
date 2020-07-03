@@ -3,37 +3,120 @@
 html {
     background: url(photos/resized.sebastian.jpg);
     background-size: cover;
-    color: white;
+    color: rgb(0, 0, 0);
 }
  
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Zilla Slab', serif;
+}
+
+
+.photos {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    opacity: 0;
+    transition: all 3s ease;
 }
 
 .forest {
     display: flex;
     position: absolute;
-    margin: 0px;
-    flex-direction: row;
     width: 100%;
-    height:100%;
+    height: 80%;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
 }
 
-footer {
+.footer {
+    display: flex;
     position: absolute;
-    bottom: 0;
+    height: 100%;
+    color: rgb(143, 199, 143);
+    text-shadow: 5px 5px 10px #000000;
+    font-size: 23px;
+    align-items: flex-end;
+    margin: 0;
 }
 
-.tree{
-    border: thin solid white;
+.tree {
+    border: thin solid black;
     padding: 10px;
+    transition: all 1.2s ease;
+    font-size: 20px;
+    width: 5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 8px #eee16a;
 }
-/*
-    
+
+kbd {
+    display: block;
+    font-size: 30px;
+}
+
+.animate {
+    transform: scale(1.1);
+    border-color: pink;
+    box-shadow: 0 0 1rem rgb(250, 110, 238);
+}
+
+.visited {
+    opacity: 1;
+    transition: 1s;
+    transform: scale(1);
+} 
+
+#photoWerewolf {
+    z-index: 10;
+}
+
+#photoFox {
+    z-index: 20;
+    padding-top: 5%;
+}
+
+#photoBigfoot {
+    z-index: 30;
+    padding-top: 5%;
+}
+
+#photoFrog {
+    z-index: 40;
+    padding-top: 10%;
+}
+
+#photoBear {
+    z-index: 50;
+    height: 35%;
+    padding-top: 5%;
+}
+
+#photoDeer {
+    z-index: 60;
+    width: 20%
+}
+
+#photoNymph {
+    z-index: 70;
+    padding-top: 5%;
+}
+
+#photoMermaid {
+    z-index: 80;
+    padding-top: 5%;
+}
+
+#photoBird {
+    z-index: 90;
+    height: 20%;
+    padding-top: 10%;
+}
+
+/*  
+
     # little divs class selector
         # set border, margin, font size, padding
         # transition tag - research
@@ -44,11 +127,6 @@ footer {
         # transform class
         # border-color
         # box-shadow
-
-    # kbd selector
-        # do some research on this
-        # display 
-        # font-size
 
     # span class
         # font-size, text-transform, latter-spacing, color

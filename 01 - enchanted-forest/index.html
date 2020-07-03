@@ -5,19 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--# make a div to contain all of the forest nodes - give it a class-->
     <div class="forest">
-        <!--# make a div for each of the forest creatures
-            # give each of the divs a data-key attribute to tie w sounds
-            # assign the same class for all, but diff than main div for CSS styling purposes-->
         <div data-key="65" class="tree" id="werewolf">
-            <!-- # use the <kbd> tag for the lettering -->
             <kbd>a</kbd>
-            <!-- # create a span inside the little divs with a new class.
-                # between the tags, desc the sound
-                # assign each span the same class, diff from the div classes-->
             <span class="animalSound" id="arcticDrought">werewolf</span>
         </div>
         <div data-key="83" class="tree" id="fox">
@@ -54,12 +47,18 @@
         </div>
 
     </div>
-
-        <!--
-        # below the div tag, use the <audio> tag to implement the sounds
-            # assign data-key to corresponding div
-            # src attribute should be "fileLocation.wav"
-    -->
+    <div class="animals">
+        <img data-key="65" id="photoWerewolf" class="photos" src="animals/werewolf/mad guy cutout.png"></img>
+        <img data-key="83" id="photoFox" class="photos" src="animals/fox/fox tilt cutout.png"></img>
+        <img data-key="68" id="photoBigfoot" class="photos" src="animals/bigfoot/bigfoot sighting cutout.png"></img>
+        <img data-key="70" id="photoFrog" class="photos" src="animals/frog/frog chillin but w a lily cutout.png"></img>
+        <img data-key="71" id="photoBear" class="photos" src="animals/bear/silly bear cutout.png"></img>
+        <img data-key="72" id="photoDeer" class="photos" src="animals/deer/deer jumping cutout.png"></img>
+        <img data-key="74" id="photoNymph" class="photos" src="animals/nymph/forest nymph cutout.png"></img>
+        <img data-key="75" id="photoMermaid" class="photos" src="animals/mermaid/mermaid red cutout.png"></img>
+        <img data-key="76" id="photoBird" class="photos" src="animals/bird/bluebird cutout.png"></img>
+    </div>
+    
 <audio data-key="65" id="audioWerewolf" src="sounds/Arctic Drought.wav"></audio>
 <audio data-key="83" id="audioFox" src="sounds/Day Dreams.wav"></audio>
 <audio data-key="68" id="audioBigfoot" src="sounds/Frozen Fortress.wav"></audio>
@@ -70,19 +69,9 @@
 <audio data-key="75" id="audioMermaid" src="sounds/Swimming.wav"></audio>
 <audio data-key="76" id="audioBird" src="sounds/Whimsy.wav"></audio>
 
-<img data-key="65" id="photoWerewolf" src="animals/werewolf/mad guy cutout.png"></audio>
-<img data-key="83" id="photoFox" src="animals/fox/fox tilt cutout.png"></audio>
-<img data-key="68" id="photoBigfoot" src="animals/bigfoot/bigfoot sighting cutout.png"></audio>
-<img data-key="70" id="photoFrog" src="animals/frog/frog chillin but w a lily cutout.png"></audio>
-<img data-key="71" id="photoBear" src="animals/bear/silly bear cutout.png"></audio>
-<img data-key="72" id="photoDeer" src="animals/deer/deer jumping cutout.png"></audio>
-<img data-key="74" id="photoNymph" src="animals/nymph/forest nymph cutout.png"></audio>
-<img data-key="75" id="photoMermaid" src="animals/mermaid/mermaid red cutout.png"></audio>
-<img data-key="76" id="photoBird" src="animals/bird/bluebird cutout.png"></audio>
-
-<footer>
+<div class="footer">
     <h6>Photo by Sebastian Unrau on Unsplash</h6>
-</footer>
+</div>
 
     <script src="app.js"></script>
 </body>
