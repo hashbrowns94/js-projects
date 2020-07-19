@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clocks</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 <body>
-    
 
+<div class = clocks>
+    <!--make three divs with three clocks-->
+    <div class = "box" id = "ltBox">
+        <h3 class = "place">Nairobi, Kenya</h3>
+        <div class = "clock" id = "kenya">
+            <div class = "center" id = "nairobiCenter"></div>
+            <div class = "hourHand" id = "nairobiHour"></div>
+            <div class = "minuteHand" id = "nairobiMinute"></div>
+            <div class = "secondHand" id = "nairobiSecond"></div>
+        </div>
+    </div>
+    
+    <div class="box" id="ctrBox">
+        <h3 class = "place">Local Time</h3>
+        <div class = "clock" id = "local"]>
+            <div class = "center" id = "localCenter"></div>
+            <div class = "hourHand" id = "localHour"></div>
+            <div class = "minuteHand" id = "localMinute"></div>
+            <div class = "secondHand" id = "localSecond"></div>
+        </div>
+    </div>
+    
+    <div class="box" id="rtBox">
+        <h3 class = "place">Tokyo, Japan</h3>
+        <div class = "clock" id = "japan">
+            <div class = "center" id = "tokyoCenter"></div>
+            <div class = "hourHand" id = "tokyoHour"></div>
+            <div class = "minuteHand" id = "tokyoMinute"></div>
+            <div class = "secondHand" id = "tokyoSecond"></div>
+        </div> 
+    </div>     
+</div>
     <script src="app.js"></script>
 </body>
 </html>
